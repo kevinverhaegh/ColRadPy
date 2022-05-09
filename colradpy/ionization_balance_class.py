@@ -179,8 +179,8 @@ class ionization_balance():
 
                     if ('xcd' not in self.data['cr_data']['gcrs'][str(j)]):
                         self.data['cr_data']['gcrs'][str(j)]['xcd'] = np.zeros(
-                            (np.shape(self.data['cr_data']['gcrs'][str(j)]['scd'])[0],
-                             np.shape(self.data['cr_data']['gcrs'][str(j)]['scd'])[0],
+                            (np.shape(self.data['cr_data']['gcrs'][str(j)]['scd'])[1],
+                             np.shape(self.data['cr_data']['gcrs'][str(j)]['scd'])[1],
                              len(temp_grid),
                              len(dens_grid)))
 
